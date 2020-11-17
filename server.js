@@ -10,6 +10,7 @@ const accepted_extensions = ['jpg', 'png', 'gif'];
 const upload_folder = 'tmp';
 
 app.use(express.static('public'));
+
 app.use('/uploaded', express.static(upload_folder));
 app.use(fileUpload({
   createParentPath: true
@@ -45,10 +46,6 @@ function validate_format(req, res, next) {
   next();
 }
 
-// Index get route
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
 
 // Upload post route
 app.post('/upload', upload.single('image'), validate_format, (req, res, next) => {

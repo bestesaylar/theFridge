@@ -12,6 +12,13 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use("/uploaded", express.static(upload_folder));
 
+// get list of posts
+app.get("/posts", (req, res) => {
+  fs.promises.readdir(upload_folder).then(files => {
+    res.send(JSON.stringify(files));
+  });
+});
+
 // Upload post route
 app.post("/upload", (req, res) => {
   const { title, image } = req.body;
@@ -22,12 +29,15 @@ app.post("/upload", (req, res) => {
     .slice(2);
   var base64Data = image.replace(/^data:image\/png;base64,/, "");
 
-  fs.writeFile(`tmp/${id}.png`, base64Data, "base64", function(err) {
+  fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64", function(
+    err
+  ) {
     if (err) {
       console.log(err);
     }
   });
-  res.sendStatus(200).json({ id: id });
+  res.json({ id: id });
+  console.log("saved " + id);
 });
 
 // Server listener

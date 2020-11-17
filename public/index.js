@@ -1,5 +1,24 @@
 let canvas = document.getElementById("canvas");
 let upload = document.getElementById("upload");
+let posts = document.getElementById("posts");
+
+function getPosts() {
+  fetch("/posts", {
+    method: "get"
+  })
+    .then(res => res.json())
+    .then(response => {
+      console.log("posts:", JSON.stringify(response));
+
+      let images_html = response
+        .map(file_url => {
+          return `<img src="uploaded/${file_url}">`;
+        })
+        .join("\n");
+      posts.innerHTML = images_html;
+    });
+}
+getPosts();
 
 upload.addEventListener("click", e => {
   let payload = {
@@ -16,7 +35,6 @@ upload.addEventListener("click", e => {
     .then(res => res.json())
     .then(response => {
       console.log("Success:", JSON.stringify(response));
-    
     });
 });
 var ctx = canvas.getContext("2d");

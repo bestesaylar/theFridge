@@ -1,29 +1,24 @@
 let canvas = document.getElementById("canvas");
 let upload = document.getElementById("upload");
 
-
-upload.addEventListener("click",e=>{
-  
+upload.addEventListener("click", e => {
   let payload = {
-    img: canvas.toDataURL("image/png"),
-    name: "my name",
-
-  }
-  fetch(functions._url("upload"), {
-      method: "POST",
-      body: JSON.stringify(payload), // data can be `string` or {object}!
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-      .then(res => res.json())
-      .then(response => {
-        console.log("Success:", JSON.stringify(response));
-        this.play();
-      })
-  
-  
-})
+    image: canvas.toDataURL("image/png"),
+    name: "my name"
+  };
+  fetch("/upload", {
+    method: "POST",
+    body: JSON.stringify(payload), // data can be `string` or {object}!
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(response => {
+      console.log("Success:", JSON.stringify(response));
+    
+    });
+});
 var ctx = canvas.getContext("2d");
 
 let mousedown = false;

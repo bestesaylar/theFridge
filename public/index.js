@@ -28,13 +28,19 @@ canvas.addEventListener("mousemove", e => {
   ctx.moveTo(last_x, last_y);
   ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
   ctx.stroke();
-  ctx.translate(10,10);
-ctx.beginPath();
+  ctx.translate(3, 3);
+  ctx.beginPath();
   ctx.moveTo(last_x, last_y);
   ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
   ctx.stroke();
-  
-  ctx.resetTransof
+  ctx.resetTransform();
+  ctx.translate(-3, -3);
+  ctx.beginPath();
+  ctx.moveTo(last_x, last_y);
+  ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
+  ctx.stroke();
+  ctx.resetTransform();
+
   last_x = e.clientX - bounds.left;
   last_y = e.clientY - bounds.top;
 });

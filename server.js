@@ -4,8 +4,6 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-/* CONFIG */
-const accepted_extensions = ["jpg", "png", "gif"];
 const upload_folder = "tmp";
 
 app.use(express.static("public"));
@@ -32,15 +30,12 @@ app.post("/upload", (req, res) => {
   fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64", function(
     err
   ) {
-    if (err) {
-      console.log(err);
-    }
+    console.log(err);
   });
   res.json({ id: id });
   console.log("saved " + id);
 });
 
 // Server listener
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
+app.listen(process.env.PORT);
+console.log("Your app is listening on port " + process.env.PORT);

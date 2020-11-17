@@ -35,6 +35,7 @@ upload.addEventListener("click", e => {
     .then(res => res.json())
     .then(response => {
       console.log("Success:", JSON.stringify(response));
+      getPosts();
     });
 });
 var ctx = canvas.getContext("2d");

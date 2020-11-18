@@ -18,7 +18,7 @@ function getPosts() {
       posts.innerHTML = images_html;
     });
 }
-// getPosts();
+getPosts();
 
 //UPLOAD CANVAS TO SERVER
 upload.addEventListener("click", e => {
@@ -35,11 +35,11 @@ upload.addEventListener("click", e => {
       "Content-Type": "application/json"
     }
   })
-    // .then(res => res.json())
-    // .then(response => {
-    //   console.log("Success:", JSON.stringify(response));
-    //   getPosts();
-    // });
+    .then(res => res.json())
+    .then(response => {
+      console.log("Success:", JSON.stringify(response));
+      getPosts();
+    });
 });
 
 

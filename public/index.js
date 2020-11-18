@@ -71,6 +71,8 @@ canvas.addEventListener("mousemove", e => {
   ctx.moveTo(last_x, last_y);
   ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
   ctx.stroke();
+  
+  
   ctx.translate(3, 3);
   ctx.strokeStyle = "#FF0000";
   ctx.beginPath();

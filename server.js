@@ -7,34 +7,35 @@ const app = express();
 const upload_folder = "tmp";
 app.use(express.static("public"));
 
-// app.use(bodyParser.json());
-// app.use("/uploaded", express.static(upload_folder));
+app.use(bodyParser.json());
+app.use("/uploaded", express.static(upload_folder));
 
 // // get list of posts
-// app.get("/posts", (req, res) => {
-//   fs.promises.readdir(upload_folder).then(files => {
-//     res.send(JSON.stringify(files));
-//   });
-// });
+app.get("/posts", (req, res) => {
+  fs.promises.readdir(upload_folder).then(files => {
+    res.send(
+      
+      JSON.stringify(files));
+  });
+});
 
 // Upload post route
-app.post("/upload", (request, response) => {
-  const {  image } = request.body;
+app.post("/upload", (req, res) => {
+  const { image } = req.body;
 
- 
   var base64Data = image.replace(/^data:image\/png;base64,/, "");
 
-  
-   let id = Math.random()
+  let id = Math.random()
     .toFixed(8)
     .toString()
     .slice(2);
-  
-  fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64");
-  
+
+  fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64", err =>
+    console.log(err)
+  );
+
+  res.json({ id: id });
   console.log("saved " + id);
-  
-  response.json({ id: id });
 });
 
 // Server listener

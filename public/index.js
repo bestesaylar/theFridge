@@ -3,22 +3,21 @@ let upload = document.getElementById("upload");
 let posts = document.getElementById("posts");
 
 // fetch posts from server
-// function getPosts() {
-//   fetch("/posts", {
-//     method: "get"
-//   })
-//     .then(res => res.json())
-//     .then(response => {
-//       console.log("posts:", JSON.stringify(response));
+function getPosts() {
+  fetch("/posts", {
+    method: "get"
+  })
+    .then(res => res.json())
+    .then(response => {
 
-//       let images_html = response
-//         .map(file_url => {
-//           return `<img src="uploaded/${file_url}">`;
-//         })
-//         .join("\n");
-//       posts.innerHTML = images_html;
-//     });
-// }
+      let images_html = response
+        .map(file_url => {
+          return `<img src="uploaded/${file_url}">`;
+        })
+        .join("\n");
+      posts.innerHTML = images_html;
+    });
+}
 // getPosts();
 
 //UPLOAD CANVAS TO SERVER

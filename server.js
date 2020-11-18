@@ -18,20 +18,24 @@ app.use(express.static("public"));
 // });
 
 // Upload post route
-// app.post("/upload", (req, res) => {
-//   const { title, image } = req.body;
+app.post("/upload", (request, response) => {
+  const {  image } = request.body;
 
-//   let id = Math.random()
-//     .toFixed(8)
-//     .toString()
-//     .slice(2);
+ 
+  var base64Data = image.replace(/^data:image\/png;base64,/, "");
+
   
-//   var base64Data = image.replace(/^data:image\/png;base64,/, "");
-
-//   fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64");
-//   res.json({ id: id });
-//   console.log("saved " + id);
-// });
+   let id = Math.random()
+    .toFixed(8)
+    .toString()
+    .slice(2);
+  
+  fs.writeFile(`${upload_folder}/${id}.png`, base64Data, "base64");
+  
+  console.log("saved " + id);
+  
+  response.json({ id: id });
+});
 
 // Server listener
 app.listen(process.env.PORT);

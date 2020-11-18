@@ -22,23 +22,26 @@ let posts = document.getElementById("posts");
 // getPosts();
 
 //UPLOAD CANVAS TO SERVER
-// upload.addEventListener("click", e => {
-//   let payload = {
-//     image: canvas.toDataURL("image/png"),
-//   };
-//   fetch("/upload", {
-//     method: "POST",
-//     body: JSON.stringify(payload), // data can be `string` or {object}!
-//     headers: {
-//       "Content-Type": "application/json"
-//     }
-//   })
-//     .then(res => res.json())
-//     .then(response => {
-//       console.log("Success:", JSON.stringify(response));
-//       getPosts();
-//     });
-// });
+upload.addEventListener("click", e => {
+  let payload = {
+    image: canvas.toDataURL("image/png"),
+  };
+  
+  
+  
+  fetch("/upload", {
+    method: "POST",
+    body: JSON.stringify(payload), // data can be `string` or {object}!
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+    // .then(res => res.json())
+    // .then(response => {
+    //   console.log("Success:", JSON.stringify(response));
+    //   getPosts();
+    // });
+});
 
 
 

@@ -72,7 +72,7 @@ text.addEventListener("click", function() {
   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
   top:${window.innerHeight / 2 + Math.random() * 50}px;"
   >
-:)
+Write a message
   </h3>
   `;
 });
@@ -94,7 +94,7 @@ magnet1Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/magnet1.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fmagnet1.svg?v=1606338810416"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -106,7 +106,7 @@ cilekBtn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/cilek.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fcilek.svg?v=1606338812449"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -118,7 +118,7 @@ magnet2Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/magnet2.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fmagnet2.svg?v=1606338810119"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -130,7 +130,7 @@ magnet3Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/magnet3.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fmagnet3.svg?v=1606338812112"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -142,7 +142,7 @@ note1Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/paper.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpaper.svg?v=1606338810327"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -154,7 +154,7 @@ note2Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/paper2.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpaper2.svg?v=1606338810990"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -166,7 +166,7 @@ note3Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/paper3.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpaper3.svg?v=1606338810379"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -178,7 +178,7 @@ note4Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/paper4.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpaper4.svg?v=1606338810361"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -190,7 +190,7 @@ note5Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/paper5.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpaper5.svg?v=1606338811684"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -203,7 +203,7 @@ post1Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/post1.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpost1.svg?v=1606338811566"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -215,7 +215,7 @@ post2Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/post2.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpost2.svg?v=1606338812003"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />

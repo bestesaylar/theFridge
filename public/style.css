@@ -8,6 +8,10 @@ body {
   height: fill-available;
   /* font-size: 30px; */
 }
+h3{
+  font-family: 'Caveat', cursive;
+/*   font-size:24px; */
+}
 
 .draggable {
   position: absolute;
@@ -95,6 +99,22 @@ a {
   text-align: center;
   font-family: "Galindo", cursive;
   font-weight: 600;
+}
+
+
+#text {
+  border-radius: 2px solid #5d6d7e;
+  background-color: #85c1e9;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px;
+  cursor: pointer;
+  border-bottom: none;
 }
 
 #magnet {

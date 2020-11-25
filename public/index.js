@@ -227,7 +227,7 @@ post3Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/post3.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpost3.svg?v=1606338810119"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -239,7 +239,7 @@ post4Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/post4.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpost4.svg?v=1606338810685"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -251,7 +251,7 @@ post5Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/post5.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpost5.svg?v=1606338810430"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -265,7 +265,7 @@ letter1Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/postcard1.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpostcard1.svg?v=1606338825093"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -277,7 +277,7 @@ letter2Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/postacard2.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpostacard2.svg?v=1606338825848"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -289,7 +289,7 @@ letter3Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/postcard3.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpostcard3.svg?v=1606338823370"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -301,7 +301,7 @@ letter4Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/postcard4.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpostcard4.svg?v=1606338820400"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />
@@ -313,7 +313,7 @@ letter5Btn.addEventListener("click", function() {
   appDiv.innerHTML += `
   <image crossorigin="anonymous"
    class="draggable"
-   src="../data/postcard5.svg"
+   src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Fpostcard5.svg?v=1606338818980"
    style="left:${window.innerWidth / 2 + Math.random() * 50}px;
           top:${window.innerHeight / 2 + Math.random() * 50}px;
           width:100px" />

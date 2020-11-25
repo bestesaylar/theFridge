@@ -256,7 +256,7 @@ a {
   font-size: 1em;
 }
 
-#export_vegan {
+#clear {
   width: 50vw;
   text-align: center;
   background-color: #f4d03f;
@@ -264,7 +264,7 @@ a {
   padding: 10px 0;
 }
 
-#export_vegan > button {
+#clear > button {
   border: none;
   background-color: #008b27;
   font-size: 1em;

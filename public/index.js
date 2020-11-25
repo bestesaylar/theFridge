@@ -1,4 +1,4 @@
-import saveAs from 'file-saver';
+// import saveAs from 'file-saver';
 
 let magnet = document.getElementById("magnet");
 let notes = document.getElementById("notes");
@@ -38,6 +38,7 @@ let third = document.getElementById("third");
 let fourth = document.getElementById("fourth");
 
 let appDiv = document.getElementById("app");
+let clear = document.getElementById("clear");
 
 magnet.addEventListener("click", function() {
   first.style.display = "flex";
@@ -326,9 +327,14 @@ letter5Btn.addEventListener("click", function() {
 let upload = document.getElementById("upload");
 //clear
 
-  function clearcontent(appDiv) { 
-            document.getElementById(appDiv).innerHTML = ""; 
-        } 
+clear.addEventListener("click", function() {
+  appDiv.innerHTML += "";
+});
+
+// function clearcontent(appDiv) {
+//             document.getElementById(appDiv).innerHTML = "";
+//   }
+
 
 // fetch posts from server
 function getPosts() {

@@ -325,15 +325,19 @@ letter5Btn.addEventListener("click", function() {
 //export
 
 let upload = document.getElementById("upload");
+
+
 //clear
-
-clear.addEventListener(“click”, function() {
-  appDiv.innerHTML = “”;
+clear.addEventListener("click", function() {
+  appDiv.innerHTML = `
+  <div id="bg">
+         <image
+          class="fridge"
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/52b91d85-dc25-4b9b-9e8c-ab4d56238a3f%2Ffridge.svg?v=1606338810119"
+        />
+        </div>`;
 });
-
-// function clearcontent(appDiv) {
-//             document.getElementById(appDiv).innerHTML = "";
-//   }
 
 
 // fetch posts from server

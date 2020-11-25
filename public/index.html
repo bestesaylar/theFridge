@@ -3,43 +3,144 @@
   <head>
     <meta charset="utf-8" />
     <title>Glitch image-hosting</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="favicon" href="/uploaded/b60b1219a889db412a6f2eafb3a4698d.jpg" />
-    <style>
-      form {
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
-      }
-      input.btn {
-        flex: 0.8;
-      }
-      button.btn {
-        flex: 0.15;
-      }
-      .container{
-        display: flex;
-        justify-content: flex-start;
-        align-items:center;
-      }
-      #posts{
-        margin:auto;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      img, canvas{
-        box-shadow: 0px 0px 3px  black;
-        margin: 20px;
-      }
-    </style>
+      <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galindo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  
   <body>
-    <div class="container">
-      <canvas id="canvas" height="300" width="300"> </canvas>
-      <button
+     <div class="header">
+      <div id="handle_name">The Fridge</div>
+    </div>
+    <div class="option">
+      <button id="magnet">Magnet</button>
+      <button id="notes">Note</button>
+      <button id="postit">Post it</button>
+      <button id="letter">Letter</button>
+         <button id="text">Text</button>
+    </div>
+    <div class="second-row">
+      <!-- <img id="firstbox" />
+      <img id="secondbox" />
+      <img id="thirdbox" /> -->
+
+      <div id="first">
+        <image
+          id="cilekAdder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fcilek.svg?v=1606331949929"
+        />
+        <image
+          id="abcAdder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fabc.svg?v=1606331949168"
+        />
+        <image
+          id="maget1Adder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fmagnet1.svg?v=1606331948058"
+        />
+        <image
+          id="magnet2Adder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fmagnet2.svg?v=1606331948058"
+        />
+        <image
+          id="magnet3Adder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fmagnet3.svg?v=1606331948058"
+        />
+      </div>
+      <div id="second" style="display: none">
+        <image
+          id="note1Adder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fpaper.svg?v=1606331948058"
+        />
+        <image
+          id="note2Adder"
+          crossorigin="anonynous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fpaper2.svg?v=1606331948058"
+        />
+        <image
+          id="note3Adder"
+          crossorigin="anonynous"
+          src="./assets/paper3.svg"
+        />
+        <image
+          id="note4Adder"
+          crossorigin="anonynous"
+          src="./assets/paper4.svg"
+        />
+        <image
+          id="note5Adder"
+          crossorigin="anonynous"
+          src="./assets/paper5.svg"
+        />
+      </div>
+      <div id="third" style="display: none">
+        <image id="post1Adder" crossorigin="anonynous" src="./data/post1.svg" />
+        <image id="post2Adder" crossorigin="anonynous" src="./data/post2.svg" />
+        <image id="post3Adder" crossorigin="anonynous" src="./data/post3.svg" />
+        <image id="post4Adder" crossorigin="anonynous" src="./data/post4.svg" />
+        <image id="post5Adder" crossorigin="anonynous" src="./data/post5.svg" />
+      </div>
+      <div id="fourth" style="display: none">
+        <image
+          id="letter1Adder"
+          crossorigin="anonynous"
+          src="./data/postcard1.svg"
+        />
+        <image
+          id="letter2Adder"
+          crossorigin="anonynous"
+          src="./data/postacard2.svg"
+        />
+        <image
+          id="letter3Adder"
+          crossorigin="anonynous"
+          src="./data/postcard3.svg"
+        />
+        <image
+          id="letter4Adder"
+          crossorigin="anonynous"
+          src="./data/postcard4.svg"
+        />
+        <image
+          id="letter5Adder"
+          crossorigin="anonynous"
+          src="./data/postcard5.svg"
+        />
+      </div>
+    </div>
+    <div id="app">
+      <div id="bg">
+        <image
+          class="fridge"
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Ffridge.svg?v=1606331948902"
+        />
+      </div>
+    </div>
+    <div class="exports">
+      <a id="export" download="fridge.png" href="">
+        Export
+      </a>
+      <a id="export_vegan">
+        Clear
+      </a>
+    </div>
+       <button
         id="upload"
         class="btn btn-primary"
         type="submit"
@@ -47,10 +148,7 @@
       >
         Upload 
       </button>
-    </div>
-      
-      <div id="posts"></div>
   </body>
-
+   <script src="./draggable.js"></script>
   <script src="index.js"></script>
 </html>

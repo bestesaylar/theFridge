@@ -1,10 +1,350 @@
-let canvas = document.getElementById("canvas");
+
+let magnet = document.getElementById("magnet");
+let notes = document.getElementById("notes");
+let postit = document.getElementById("postit");
+let letter = document.getElementById("letter");
+let text = document.getElementById("text");
+
+let abcBtn = document.getElementById("abcAdder");
+let cilekBtn = document.getElementById("cilekAdder");
+
+let note1Btn = document.getElementById("note1Adder");
+let note2Btn = document.getElementById("note2Adder");
+let note3Btn = document.getElementById("note3Adder");
+let note4Btn = document.getElementById("note4Adder");
+let note5Btn = document.getElementById("note5Adder");
+
+let post1Btn = document.getElementById("post1Adder");
+let post2Btn = document.getElementById("post2Adder");
+let post3Btn = document.getElementById("post3Adder");
+let post4Btn = document.getElementById("post4Adder");
+let post5Btn = document.getElementById("post5Adder");
+
+let letter1Btn = document.getElementById("letter1Adder");
+let letter2Btn = document.getElementById("letter2Adder");
+let letter3Btn = document.getElementById("letter3Adder");
+let letter4Btn = document.getElementById("letter4Adder");
+let letter5Btn = document.getElementById("letter5Adder");
+
+let magnet1Btn = document.getElementById("maget1Adder");
+let magnet2Btn = document.getElementById("magnet2Adder");
+let magnet3Btn = document.getElementById("magnet3Adder");
+
+//
+let first = document.getElementById("first");
+let second = document.getElementById("second");
+let third = document.getElementById("third");
+let fourth = document.getElementById("fourth");
+
+let appDiv = document.getElementById("app");
+
+magnet.addEventListener("click", function() {
+  first.style.display = "flex";
+  second.style.display = "none";
+  third.style.display = "none";
+  fourth.style.display = "none";
+});
+notes.addEventListener("click", function() {
+  first.style.display = "none";
+  second.style.display = "flex";
+  third.style.display = "none";
+  fourth.style.display = "none";
+});
+
+postit.addEventListener("click", function() {
+  first.style.display = "none";
+  second.style.display = "none";
+  third.style.display = "flex";
+  fourth.style.display = "none";
+});
+
+letter.addEventListener("click", function() {
+  first.style.display = "none";
+  second.style.display = "none";
+  third.style.display = "none";
+  fourth.style.display = "flex";
+});
+
+//text
+text.addEventListener("click", function () {
+  appDiv.innerHTML += `
+  <h3 class="draggable"
+  contenteditable
+  style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+  top:${window.innerHeight / 2 + Math.random() * 50}px;"
+  >
+:)
+  </h3>
+  `;
+});
+//Magnets
+abcBtn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="https://cdn.glitch.com/9e4c2378-84cc-4473-81fe-0d75aca28e65%2Fabc.svg?v=1606331949168"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+magnet1Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/magnet1.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+cilekBtn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/cilek.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+magnet2Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/magnet2.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+magnet3Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/magnet3.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+//Notes
+note1Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/paper.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+note2Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/paper2.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+note3Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/paper3.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+note4Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/paper4.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+note5Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/paper5.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+//Postits
+
+post1Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/post1.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+post2Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/post2.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+post3Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/post3.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+post4Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/post4.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+post5Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/post5.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+//L
+//Letters
+
+letter1Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/postcard1.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+letter2Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/postacard2.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+letter3Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/postcard3.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+letter4Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/postcard4.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+letter5Btn.addEventListener("click", function() {
+  console.log("orangeBtn");
+  appDiv.innerHTML += `
+  <image crossorigin="anonymous"
+   class="draggable"
+   src="../data/postcard5.svg"
+   style="left:${window.innerWidth / 2 + Math.random() * 50}px;
+          top:${window.innerHeight / 2 + Math.random() * 50}px;
+          width:100px" />
+  `;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let upload = document.getElementById("upload");
-let posts = document.getElementById("posts");
+
 
 // fetch posts from server
 function getPosts() {
-  fetch("tmp/fridge.html", {
+  fetch("uploaded/fridge.html", {
     method: "get"
   })
     .then(res => res.text())
@@ -37,52 +377,3 @@ upload.addEventListener("click", e => {
     });
 });
 
-// DRAWING STUFF
-var ctx = canvas.getContext("2d");
-
-let mousedown = false;
-let last_x = 0;
-let last_y = 0;
-canvas.addEventListener("mousedown", e => {
-  mousedown = true;
-
-  let bounds = canvas.getBoundingClientRect();
-  last_x = e.clientX - bounds.left;
-  last_y = e.clientY - bounds.top;
-});
-
-canvas.addEventListener("mouseup", e => {
-  mousedown = false;
-});
-
-canvas.addEventListener("mousemove", e => {
-  if (!mousedown) {
-    return;
-  }
-  let bounds = canvas.getBoundingClientRect();
-  ctx.strokeStyle = "black";
-
-  ctx.beginPath();
-  ctx.moveTo(last_x, last_y);
-  ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
-  ctx.stroke();
-
-  ctx.translate(3, 3);
-  ctx.strokeStyle = "#FF0000";
-  ctx.beginPath();
-  ctx.moveTo(last_x, last_y);
-  ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
-  ctx.stroke();
-  ctx.resetTransform();
-  ctx.translate(-3, -3);
-  ctx.strokeStyle = "#0000FF";
-
-  ctx.beginPath();
-  ctx.moveTo(last_x, last_y);
-  ctx.lineTo(e.clientX - bounds.left, e.clientY - bounds.top);
-  ctx.stroke();
-  ctx.resetTransform();
-
-  last_x = e.clientX - bounds.left;
-  last_y = e.clientY - bounds.top;
-});

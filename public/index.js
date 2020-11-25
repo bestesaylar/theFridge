@@ -322,14 +322,17 @@ letter5Btn.addEventListener("click", function() {
 //export
 
 let exportButton = document.getElementById("export");
-exportButton.onclick = function exportClick() {
-  let dataURL = appDiv.toDataURL("image/jpg");
-  exportButton.href = dataURL;
-};
+// exportButton.onclick = function exportClick() {
+//   let dataURL = appDiv.toDataURL("image/jpg");
+//   exportButton.href = dataURL;
+// };
 
-
-
-
+exportButton.addEventListeer("click",()=>{
+  appDiv.toBlob(function(blob){
+    console.log(blob);
+    saveAs(blob,"fridge.png")
+  })
+})
 
 
 

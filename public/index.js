@@ -1,4 +1,3 @@
-
 let magnet = document.getElementById("magnet");
 let notes = document.getElementById("notes");
 let postit = document.getElementById("postit");
@@ -66,7 +65,7 @@ letter.addEventListener("click", function() {
 });
 
 //text
-text.addEventListener("click", function () {
+text.addEventListener("click", function() {
   appDiv.innerHTML += `
   <h3 class="draggable"
   contenteditable
@@ -321,26 +320,7 @@ letter5Btn.addEventListener("click", function() {
   `;
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let upload = document.getElementById("upload");
-
 
 // fetch posts from server
 function getPosts() {
@@ -352,6 +332,7 @@ function getPosts() {
       console.log(response);
       if (response) {
         document.getElementById("app").outerHTML = response;
+        appDiv = document.getElementById("app");
       }
     });
 }
@@ -376,4 +357,3 @@ upload.addEventListener("click", e => {
       getPosts();
     });
 });
-

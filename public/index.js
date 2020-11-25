@@ -323,19 +323,12 @@ letter5Btn.addEventListener("click", function() {
 });
 //export
 
-let exportButton = document.getElementById("export");
-// exportButton.onclick = function exportClick() {
-//   let dataURL = appDiv.toDataURL("image/png");
-//   exportButton.href = dataURL;
-// };
-
-exportButton.addEventListeer("click", () => {
-FileSaver.saveAs("https://httpbin.org/image", "image.jpg");
-  });
-});
-
-
 let upload = document.getElementById("upload");
+//clear
+
+  function clearcontent(appDiv) { 
+            document.getElementById(appDiv).innerHTML = ""; 
+        } 
 
 // fetch posts from server
 function getPosts() {

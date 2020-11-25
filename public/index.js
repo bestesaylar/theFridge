@@ -327,8 +327,8 @@ letter5Btn.addEventListener("click", function() {
 let upload = document.getElementById("upload");
 //clear
 
-clear.addEventListener("click", function() {
-  appDiv.innerHTML += "";
+clear.addEventListener(“click”, function() {
+  appDiv.innerHTML = “”;
 });
 
 // function clearcontent(appDiv) {

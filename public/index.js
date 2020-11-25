@@ -319,6 +319,19 @@ letter5Btn.addEventListener("click", function() {
           width:100px" />
   `;
 });
+//export
+
+let exportButton = document.getElementById("export");
+exportButton.onclick = function exportClick() {
+  let dataURL = appDiv.toDataURL("image/jpg");
+  exportButton.href = dataURL;
+};
+
+
+
+
+
+
 
 let upload = document.getElementById("upload");
 

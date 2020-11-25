@@ -1,6 +1,7 @@
 dependencies:
   body-parser: 1.19.0
   express: 4.16.4
+  file-saver: 2.0.5
   uuid: 8.3.1
 packages:
   /accepts/1.3.5:
@@ -157,6 +158,10 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
+  /file-saver/2.0.5:
+    dev: false
+    resolution:
+      integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
   /finalhandler/1.1.1:
     dependencies:
       debug: 2.6.9
@@ -470,4 +475,5 @@ shrinkwrapVersion: 3
 specifiers:
   body-parser: ^1.19.0
   express: ^4.16.4
+  file-saver: ^2.0.5
   uuid: ^8.3.1

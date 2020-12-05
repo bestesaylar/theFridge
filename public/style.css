@@ -90,6 +90,12 @@ button {
 
 #button_enter{
   color:red;
+/*     width: 25vw; */
+  padding:20px;
+  min-width: 60px;
+  text-align: center;
+  font-family: "Galindo", cursive;
+  font-weight: 600;
 }
 
 a{
@@ -270,7 +276,7 @@ a{
 #upload {
   width: 50vw;
   text-align: center;
-  background-color: #85c1e9;
+  background-color: #f4d03f;
   color: white;
   padding: 10px 0;
 }
@@ -284,14 +290,14 @@ a{
 #clear {
   width: 50vw;
   text-align: center;
-  background-color: #f4d03f;
+  background-color: #85c1e9;
   color: white;
   padding: 10px 0;
 }
 
 #clear > button {
   border: none;
-  background-color: #008b27;
+  background-color: #85c1e9;
   font-size: 1em;
 }
 

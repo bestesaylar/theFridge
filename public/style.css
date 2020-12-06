@@ -87,12 +87,19 @@ button {
   position: absolute;
 /*   width: 100%;
   height: 3rem; */
-  padding: 0px 50px 40px;
+  padding: 0px 50px 540px;
 }
+
+#enter_title{
+  margin-top:100px;
+  text-align:center;
+  
+}
+
 
 .enter button{
   position:absolute;
-  top:300px;
+  top:500px;
 }
 
 #button_enter {

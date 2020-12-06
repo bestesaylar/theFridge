@@ -93,18 +93,33 @@ button {
 #enter_title{
   margin-top:100px;
   text-align:center;
-  
 }
-
 
 .enter button{
   position:absolute;
   top:350px;
 }
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+/*   background-color: red; */
+  color: white;
+  text-align: center;
+  
+}
 .footer-bottom{
   color:white;
-  position:absolute;
+/*   position:absolute; */
   text-align:center;
+  font-family: "Caveat", cursive;
+    text-align: center;
+}
+.footer-bottom a{
+  color:white;
+  font-family: "Caveat", cursive;
 }
 
 #button_enter {
